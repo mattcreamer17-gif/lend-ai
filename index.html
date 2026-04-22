@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lendai - A read on where AI fits in the stack</title>
+<meta name="description" content="Matt with Eduba. I read up on the 2023 pivot from balance-sheet lender to brokerage, and the December filing on the Israeli side. I have a specific hypothesis about where the Triple Digital Underwriting model is leaking at the partner-lender match step." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="https://lendai.us/" target="_blank" rel="noopener" class="logo-wrap" aria-label="Lendai">
+      <img src="logo.svg" alt="Lendai" class="logo" />
+    </a>
+    <span class="nav-note">Prepared for Lendai leadership</span>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow">A working note, not a pitch deck</p>
+      <h1>A read on where AI fits in Lendai's stack, and where a simpler layer would work harder.</h1>
+      <p class="lede">
+        Lendai spent the last three years turning a real gap into a product: foreign investors who cannot get a US mortgage because no US bank can pull their credit file. The Triple Digital Underwriting system is the asset that built that, and the 14-day closings and the LTVs up to 70% are the proof.
+      </p>
+      <div class="hero-meta">
+        <div class="meta-item">
+          <span class="meta-k">Written for</span>
+          <span class="meta-v">Yair, Erez, Boaz</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-k">Posture</span>
+          <span class="meta-v">Scoped audit</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-k">Next step</span>
+          <span class="meta-v">30 minutes with Matt</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-shift">
+    <div class="container narrow">
+      <h2>The shape of the problem changed in 2023.</h2>
+      <p>
+        The pivot to brokerage changed what the credit model has to predict. It used to answer one thing, which was whether Lendai should lend. It now has to answer two things: whether any lender will approve, and which partner is the right match. That is a different kind of problem. It is not a larger AI problem.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section-layers">
+    <div class="container">
+      <div class="layers-grid">
+        <div class="layers-copy">
+          <h2>Most of what runs a cross-border lender is not AI.</h2>
+          <p>
+            It is code, rules, documents, and state-by-state licensing. For Lendai, the ten percent where AI earns its keep is narrow and specific: scoring foreign-national creditworthiness with limited US data, and matching borrowers to the partner whose credit box fits them best. Everything else should be the fastest, cheapest layer that gets the job done.
+          </p>
+        </div>
+        <div class="layers-stack" aria-hidden="true">
+          <div class="layer layer-60">
+            <span class="layer-pct">60%</span>
+            <span class="layer-label">Traditional software and databases</span>
+          </div>
+          <div class="layer layer-30">
+            <span class="layer-pct">30%</span>
+            <span class="layer-label">Rule-based logic, credit-box overlays, per-state disclosures, routing tables</span>
+          </div>
+          <div class="layer layer-10">
+            <span class="layer-pct">10%</span>
+            <span class="layer-label">AI: thin-file creditworthiness and partner-match scoring</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-method">
+    <div class="container narrow">
+      <p class="eyebrow eyebrow-accent">What we do</p>
+      <h2>Computational orchestration.</h2>
+      <p>
+        Deciding which piece of the workflow belongs where, then wiring it together so a 24-person team ships like a 60-person team. The methodology was built for regulated, document-heavy operators who cannot afford to rebuild their stack from scratch.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section-proof">
+    <div class="container">
+      <p class="eyebrow">Closest example in the portfolio</p>
+      <div class="proof-card">
+        <div class="proof-flag" aria-hidden="true">
+          <span class="flag-stripe flag-stripe-1"></span>
+          <span class="flag-stripe flag-stripe-2"></span>
+          <span class="flag-stripe flag-stripe-3"></span>
+        </div>
+        <div class="proof-body">
+          <h3>VigilOre</h3>
+          <p class="proof-sub">Multi-agent compliance platform for DRC-based mining operators</p>
+          <p class="proof-stat"><span class="stat-big">160+ hours</span> of compliance work collapsed to <span class="stat-accent">under 5 minutes</span>.</p>
+          <p>Same shape of problem Lendai is living with on the partner-lender and state-licensing side. Different industry, same pattern: regulated, document-heavy, thin on headcount, high personal cost to whoever absorbs the overflow.</p>
+        </div>
+      </div>
+      <div class="proof-secondary">
+        <p>
+          Training scale, for context: 1,500+ people trained across enterprise engagements since May 2025, including KPMG UK (one of the Big Four). Jake also built an online community to 22,000 members in 5 weeks.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-governance">
+    <div class="container narrow">
+      <p class="eyebrow">Governance posture for regulated credit</p>
+      <h2>What a partner lender or a state examiner would want to see.</h2>
+      <p>
+        The paper that underpins how we evaluate AI in regulated credit environments is the Ethics Engine, a psychometric assessment tool for evaluating ideological and moral patterns in LLMs. Read it at <a href="https://arxiv.org/abs/2510.11742" target="_blank" rel="noopener">arxiv.org/abs/2510.11742</a> or the repo at <a href="https://github.com/RinDig/AuditEngine" target="_blank" rel="noopener">github.com/RinDig/AuditEngine</a>. It is the framework to reach for when an audit asks how the models touching credit decisions are evaluated.
+        </p>
+      <p>
+        The companion paper on agent context architecture (Interpretable Context Methodology, submitted to ACM TiiS) lives at <a href="https://github.com/RinDig/Interpretable-Context-Methodology-ICM-" target="_blank" rel="noopener">github.com/RinDig/Interpretable-Context-Methodology-ICM-</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section-scope">
+    <div class="container">
+      <p class="eyebrow">What a first engagement looks like</p>
+      <h2>Scoped audit, milestone-gated, no surprises.</h2>
+      <div class="scope-grid">
+        <div class="scope-card">
+          <span class="scope-num">01</span>
+          <h3>Orchestration read</h3>
+          <p>Map the underwriting and routing stack against the 60 / 30 / 10 layers. Flag what is running in the wrong layer.</p>
+        </div>
+        <div class="scope-card">
+          <span class="scope-num">02</span>
+          <h3>Partner-match pass</h3>
+          <p>Walk the borrower journey from Lendai's internal score through to partner-lender decision. Identify leakage at each handoff.</p>
+        </div>
+        <div class="scope-card">
+          <span class="scope-num">03</span>
+          <h3>Compliance playbook</h3>
+          <p>Design the document and information architecture for state licensing, partner audits, and the parent-company narrative.</p>
+        </div>
+        <div class="scope-card">
+          <span class="scope-num">04</span>
+          <h3>Build or handoff</h3>
+          <p>If any piece needs heavy ML engineering below the orchestration layer, Eduba partners with NLP Logix, which has been in machine learning since 2011 and runs over 150 data scientists.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-cta">
+    <div class="container narrow">
+      <div class="cta-card">
+        <p class="eyebrow eyebrow-light">Next step</p>
+        <h2>Thirty minutes with Matt Creamer, Eduba's CRO.</h2>
+        <p class="cta-lede">Bring one workflow you hate. We will do a live orchestration audit on it and show you where the layers are misaligned. No slides.</p>
+        <a class="cta-btn" href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener">Book 30 minutes with Matt</a>
+        <p class="cta-sub">calendly.com/thecro-eduba/30min</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-col">
+      <p class="footer-primary">Prepared by Eduba. <a href="https://eduba.io" target="_blank" rel="noopener">eduba.io</a></p>
+      <p class="footer-sub">A working note for Lendai. Voice, colors, and logo belong to Lendai. The read is ours.</p>
+    </div>
+    <div class="footer-col footer-meta">
+      <p>Matt Creamer, CRO</p>
+      <p><a href="mailto:thecro@eduba.io">thecro@eduba.io</a></p>
+      <p><a href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener">calendly.com/thecro-eduba/30min</a></p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
